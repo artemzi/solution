@@ -1,0 +1,13 @@
+Полезные команды для работы с образами
+
+Удалить все образы, не помеченные тегами:
+
+docker rmi 
+
+альтернативная команда:
+
+docker rmi 
+
+В Dockerfile избегайте команд  apt-get upgrade и  apt-get dist-upgrade, оптимальный синтаксис команды для установки пакетов выглядит так:
+
+RUN apt-get update && apt-get install -y     bzr     cvs     git     mercurial     subversion
